@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zxx">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Emilio Ross Binuya">
+		<meta name="keywords" content="HTML, CSS, Bootstrap">
+		<meta name="description" content="CS3 Project">
+		<meta name="revised" content="1/13/2021">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<title>Unemployment</title>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredericka+the+Great&family=Montserrat:wght@300&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+		<style>
+			body {
+				background-image: url("https://wallpapercave.com/wp/HTeo0jt.jpg");
+			}
+			#header {
+				background-color: #cccccc;
+				border: 2px solid black;
+			}
+			h1 {
+				font-family: 'Fredericka the Great', cursive;
+				font-size: 60pt;
+				text-align: center;
+				margin: 10px;
+				padding: 10px;
+			}
+			#introtitle {
+				font-family: 'Source Serif Pro', serif;
+				background-color: #ffffff;
+				border: 1px solid black;
+				margin: 0px 5px;
+				text-align: center;
+				font-style: italic;
+				padding: 0px;
+				width: 100%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			h2 {
+				font-family: 'Source Serif Pro', serif;
+				margin: 5px;
+				padding: 5px;
+			}
+			#maintext {
+				background-color: #ffffff;
+				font-family: 'Source Serif Pro', serif;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			#headline {
+				text-align: center;
+				font-size: 30pt;
+				margin-bottom: 0px;
+				margin-top: 15px;
+			}
+			#authorname {
+				text-align: center;
+				font-size: 15px;
+				font-style: italic;
+				margin-bottom: 10px;
+			}
+			#maincontext {
+				margin-top: 5px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			#mainparagraph {
+				text-align: justify;
+				text-indent: 50px;
+				word-spacing: 3px;
+				padding: 45px 75px 5px 75px;
+				font-family: 'Montserrat', sans-serif;
+				font-size: 12pt;
+				margin-bottom: 7px;
+			}
+			#secondparagraph {
+				text-align: justify;
+				text-indent: 50px;
+				word-spacing: 3px;
+				padding: 0px 75px 5px 75px;
+				font-family: 'Montserrat', sans-serif;
+				font-size: 12pt;
+				margin-top: 7px;
+				margin-bottom: 7px;
+			}
+			#thirdparagraph {
+				text-align: justify;
+				text-indent: 50px;
+				word-spacing: 3px;
+				padding: 0px 75px 5px 75px;
+				font-family: 'Montserrat', sans-serif;
+				font-size: 12pt;
+				margin-top: 7px;
+				margin-bottom: 7px;
+			}
+			#fourthparagraph {
+				text-align: justify;
+				text-indent: 50px;
+				word-spacing: 3px;
+				padding: 0px 75px 35px 75px;
+				font-family: 'Montserrat', sans-serif;
+				font-size: 12pt;
+				margin-top: 7px;
+				margin-bottom: 7px;
+			}
+			li a:link {
+				text-decoration: none;
+			}
+			li a:hover {
+				background-color: #9c9c9c;
+			}
+			.nav-item {
+				padding: 10px;
+				font-family: 'Montserrat', sans-serif;
+			}
+			#navi {
+				padding: 0px 10px;
+			}
+			#navidiv {
+				margin-bottom: 5px;
+			}
+			#brandtitle {
+				font-family: 'Fredericka the Great', cursive;
+			}
+			@media screen and (max-width: 100%) {
+				h1 {
+					font-size: 60pt;
+				}
+				h2 {
+					font-size: 27pt;
+				}
+				#brandtitle {
+					font-size: 17pt;
+				}
+				.nav-link {
+					font-size: 13.5pt;
+				}
+				.nav-item {
+					padding 2px 10px;
+				}
+				#navidiv {
+					margin-bottom: 2.5px;
+				}
+				#mainparagraph {
+					font-size: 12pt;
+					padding: 45px 75px 5px 75px;
+				}
+				#secondparagraph {
+					font-size: 12pt;
+					padding: 0px 75px 5px 75px;
+				}
+				#thirdparagraph {
+					font-size: 12pt;
+					padding: 0px 75px 5px 75px;
+				}
+				#fourthparagraph {
+					font-size: 12pt;
+					padding: 0px 75px 35px 75px;
+				}
+			}
+			@media screen and (max-width: 991px) {
+				h1 {
+					font-size: 50pt;
+				}
+				h2 {
+					font-size: 23pt;
+				}
+				#brandtitle {
+					font-size: 14pt;
+				}
+				.nav-link {
+					font-size: 12pt;
+				}
+				.nav-item {
+					padding: 2px 10px;
+				}
+				#navidiv {
+					margin-bottom: 2.5px;
+				}
+				#mainparagraph {
+					font-size: 10pt;
+					padding: 45px 75px 5px 75px;
+				}
+				#secondparagraph {
+					font-size: 10pt;
+					padding: 0px 75px 5px 75px;
+				}
+				#thirdparagraph {
+					font-size: 10pt;
+					padding: 0px 75px 5px 75px;
+				}
+				#fourthparagraph {
+					font-size: 10pt;
+					padding: 0px 75px 35px 75px;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				h1 {
+					font-size: 45pt;
+				}
+				h2 {
+					font-size: 21pt;
+				}
+				#brandtitle {
+					font-size: 12pt;
+				}
+				.nav-link {
+					font-size: 10pt;
+				}
+				.nav-item {
+					padding: 2px 10px;
+				}
+				#navidiv {
+					margin-bottom: 2.5px;
+				}
+				#mainparagraph {
+					font-size: 9pt;
+					padding: 35px 25px 5px 25px;
+				}
+				#secondparagraph {
+					font-size: 9pt;
+					padding: 0px 25px 5px 25px;
+				}
+				#thirdparagraph {
+					font-size: 9pt;
+					padding: 0px 25px 5px 25px;
+				}
+				#fourthparagraph {
+					font-size: 9pt;
+					padding: 0px 25px 30px 25px;
+				}
+			}
+			@media screen and (max-width: 600px) {
+				h1 {
+					font-size: 40pt;
+				}
+				h2 {
+					font-size: 20pt;
+				}
+				#brandtitle {
+					font-size: 11pt;
+				}
+				.nav-link {
+					font-size: 9pt;
+				}
+				.nav-item {
+					padding: 2px 10px;
+				}
+				#navidiv {
+					margin-bottom: 2.5px;
+				}
+				#mainparagraph {
+					font-size: 8.5pt;
+					padding: 25px 12.5px 5px 12.5px;
+				}
+				#secondparagraph {
+					font-size: 8.5pt;
+					padding: 0px 12.5px 5px 12.5px;
+				}
+				#thirdparagraph {
+					font-size: 8.5pt;
+					padding: 0px 12.5px 5px 12.5px;
+				}
+				#fourthparagraph {
+					font-size: 8.5pt;
+					padding: 0px 12.5px 20px 12.5px;
+				}
+			}
+			@media screen and (max-width: 300px) {
+				h1 {
+					font-size: 30pt;
+				}
+				h2 {
+					font-size: 14pt;
+				}
+				#brandtitle {
+					display: none;
+				}
+				.nav-link {
+					font-size: 7.5pt;
+				}
+				.nav-item {
+					padding: 2px 10px;
+				}
+				#navidiv {
+					margin-bottom: 2.5;
+				}
+				#mainparagraph {
+					font-size: 7pt;
+					padding: 17px 10px 5px 10px;
+				}
+				#secondparagraph {
+					font-size: 7pt;
+					padding: 0px 10px 5px 10px;
+				}
+				#thirdparagraph {
+					font-size: 7pt;
+					padding: 0px 10px 5px 10px;
+				}
+				#fourthparagraph {
+					font-size: 7pt;
+					padding: 0px 10px 15px 10px;
+				}
+			}
+		</style>
+	</head>
+	
+	<body id="body">
+		<div>
+			<div id="header" class="container-fluid">
+				<h1>sola superstes;</h1>
+			</div>
+			<div>
+				<div id="navidiv">
+					<nav class="navbar navbar-expand-sm bg-secondary navbar-dark" id="navi">
+						<a class="navbar-brand" id="brandtitle">NAVIGATIONS</a>
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">HOME</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link disabled">MY ESSAY</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="about.html">ABOUT</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="references.html">REFERENCES</a>
+							</li>
+				</div>
+				<div id="introtitle" class="container">
+					<h2>How to Deal with Unemployment?</h2>
+				</div>
+				<div id="maincontext" class="container">
+					<div id="maintext" class="container">
+						<p id="mainparagraph">
+							Ever since I was young, I have always wondered why there are many poor beggars on the streets, asking for alms. 
+							Why were they in that position in the first place? Where are their families, and how come they aren’t there for them? 
+							I then realized that they were really unfortunate to be affected by the problem of unemployment. Unemployment refers 
+							to the state of a person not being able to find or have a job, whether they want to work or not. From small countries 
+							like Maldives, to elaborate archipelagos like the Philippines and Indonesia, up until gigantic ones with humungous population 
+							like that of China and the United States of America, unemployment plays a huge role in affecting the economic prosperity of 
+							a nation. It can lead to many different sorts of problems, such as lower tax revenues and increased welfare spending. These 
+							revenues are being used for investments for education, services, as well as to finance the government and maintain public 
+							works. At the same time, the government will be the one taking care of these people, providing them with the necessities, 
+							which would result to debt as well as poverty. With this in mind, we should have a way in order to fix this problem and prevent 
+							others from experiencing it. According to Chitra Reddy on her article, ”What is Unemployment? Its Causes, Effects, and Solutions”, 
+							the workforce of any country makes up a large part of its population. In order to be able to provide the needs of the people, 
+							all countries should ensure job availability so that all people will be able to get the chance to have work. However, is there 
+							another way to solve the problem that we face?
+						</p>
+						<p id="secondparagraph">
+							There are a lot of people that are unemployed, which are not being able to contribute to the country. We can consider them as 
+							the “burdens” and every time a person is unemployed, we can say that there is a chance that person will likely to become a 
+							burden in the future. What must we do to lessen the number of the unemployed present in the country? First, we must know which 
+							people are unemployed. We can set up a totalitarian government which is a type of government that tracks down every action an 
+							individual does. This is similar to the type of government that many historical figures established in order to maximize the 
+							capacity of their power, such as Joseph Stalin of the Soviet Union, as well as Adolf Hitler of the Nazi Germany. Under 
+							totalitarian rule, many of the social institutions and organizations will be discouraged, and this in turn will absorb the people 
+							into a single, unified society obedient to the rules and regulations implemented by the government.  Even though it limits the 
+							amount of freedom one will have, such as the ability to move and act freely in every aspect of your life, it is a fair trade in 
+							order to improve the economy of the nation, which will then be able to help improve the lives of every other citizens in the country. 
+							Now that we are able to track people, we can now identify which are unemployed. We can give a certain amount of time for those 
+							who are currently unemployed to look for a job, let’s say the time limit is about 150 days, and if they will not be able to have 
+							one during this specific timeframe, they may request for an extension for about 30 days. However, we must also consider that some 
+							of the unemployed couldn’t find jobs due to certain factors, such as more specialized job descriptions and maybe even because of 
+							poverty. So, in order to give them an opportunity, we can increase the job availability present in the country and also increase 
+							the amount of job options so that they would be able to choose.  And if they are still unable to find a decent job at least, this 
+							is where the consequences take in effect. 
+						</p>
+						<p id="thirdparagraph">
+							These consequences may include severe torture, mutilation, imprisonment, destruction of properties, and worse, death. Why do we 
+							have these consequences or punishments? These will serve as example for those who are unwilling to do work for the country, and 
+							also to those who given more choices to choose from. You were already provided with an ample amount of time to find at least a 
+							decent job, and the job options that you will choose from has already been increased, so you should have been able to comply. 
+							These punishments will be publicly executed, so that the public eye will be able see how big of a problem it is. If the people 
+							were to see these harsh punishments enacted upon the jobless, if they were to see blood pouring out where the fingernails resided, 
+							would they sit by and stay unemployed? Either you find work, or face the consequences. This way, we will be sure to eliminate any 
+							useless citizens who doesn’t have capability to at least provide the minimum service they can to the government, especially to the 
+							country. More and more citizens will be able to work and serve the government, therefore the amount of “burden” will lessen. 
+						</p>
+						<p id="fourthparagraph">
+							Unemployment affects us all in many different ways. It can affect us personally, socially, and it can also affect the whole country 
+							as a whole. With unemployment rates increasing as time goes by, the economy of the country is slowly being affected. The ones who 
+							will be providing the facilities as well as necessities for the unemployed will be the government, and because of that, the burden 
+							of debt of the government will definitely increase. Another effect of unemployment is lower income, which might lead to poor living 
+							conditions and health risks to the people. All in all, unemployment affects each and everyone of us, and it is currently present in 
+							almost all countries in the world. That is why all of us should be trying to look for the solutions to this problem, to find cure 
+							for the cancer that has already enveloped the most parts of the world.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

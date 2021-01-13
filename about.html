@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zxx">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Emilio Ross Binuya">
+		<meta name="keywords" content="HTML, CSS, Bootstrap">
+		<meta name="description" content="CS3 Project">
+		<meta name="revised" content="1/13/2021">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<title>Unemployment</title>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredericka+the+Great&family=Montserrat:wght@300&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+		<style>
+			body {
+				background-image: url("https://wallpapercave.com/wp/HTeo0jt.jpg");
+			}
+			#header {
+				background-color: #cccccc;
+				border: 2px solid black;
+			}
+			h1 {
+				font-family: 'Fredericka the Great', cursive;
+				font-size: 60pt;
+				text-align: center;
+				margin: 10px;
+				padding: 10px;
+			}
+			#introtitle {
+				background-color: #ffffff;
+				border: 1px solid black;
+				margin: 0px 5px;
+				font-size: 20pt;
+				text-align: center;
+				width: 100%;
+				font-style: italic;
+				font-family: 'Source Serif Pro', serif;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			h2 {
+				margin: 5px;
+				padding: 5px;
+			}
+			li a:link {
+				text-decoration: none;
+			}
+			li a:hover {
+				background-color: #9c9c9c;
+			}
+			.nav-item {
+				padding: 10px;
+				font-family: 'Montserrat', sans-serif;
+			}
+			#navi {
+				padding: 0px 10px;
+			}
+			#navidiv {
+				margin-bottom: 5px;
+			}
+			#brandtitle {
+				font-family: 'Fredericka the Great', cursive;
+			}
+			.card {
+				margin: 5px;
+				margin-left: auto;
+				margin-right: auto;
+				width: 426px;
+			}
+			.card-title {
+				text-align: center;
+				font-family: 'Source Serif Pro', serif;
+			}
+			.card-text {
+				font-family: 'Montserrat', sans-serif;
+			}
+			
+				@media screen and (max-width: 100%) {
+				h1 {
+					font-size: 60pt;
+				}
+				h2 {
+					font-size: 27pt;
+				}
+				#brandtitle {
+					font-size: 17pt;
+				}
+				.nav-link {
+					font-size: 13.5pt;
+				}
+				.nav-item {
+					padding 2px 10px;
+				}
+				#navidiv {
+					margin-bottom: 2.5px;
+				}
+			}
+			@media screen and (max-width: 991px) {
+				h1 {
+					font-size: 50pt;
+				}
+				h2 {
+					font-size: 23pt;
+				}
+				#brandtitle {
+					font-size: 14pt;
+				}
+				.nav-link {
+					font-size: 12pt;
+				}
+				.nav-item {
+					padding: 2px 10px;
+				}
+				#navidiv {
+					margin-bottom: 2.5px;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				h1 {
+					font-size: 45pt;
+				}
+				h2 {
+					font-size: 21pt;
+				}
+				#brandtitle {
+					font-size: 12pt;
+				}
+				.nav-link {
+					font-size: 10pt;
+				}
+				.nav-item {
+					padding: 2px 10px;
+				}
+				#navidiv {
+					margin-bottom: 2.5px;
+				}
+			}
+			@media screen and (max-width: 600px) {
+				h1 {
+					font-size: 40pt;
+				}
+				h2 {
+					font-size: 20pt;
+				}
+				#brandtitle {
+					font-size: 11pt;
+				}
+				.nav-link {
+					font-size: 9pt;
+				}
+				.nav-item {
+					padding: 2px 10px;
+				}
+				#navidiv {
+					margin-bottom: 2.5px;
+				}
+				.card {
+					width: 90%;
+				}
+				.card-title {
+					font-size: 20pt;
+				}
+				.card-text {
+					font-size: 10pt;
+				}
+			}
+			@media screen and (max-width: 300px) {
+				h1 {
+					font-size: 30pt;
+				}
+				h2 {
+					font-size: 14pt;
+				}
+				#brandtitle {
+					display: none;
+				}
+				.nav-link {
+					font-size: 7.5pt;
+				}
+				.nav-item {
+					padding: 2px 10px;
+				}
+				#navidiv {
+					margin-bottom: 2.5;
+				}
+				.card {
+					width: 90%;
+				}
+				.card-title {
+					font-size: 18pt;
+				}
+				.card-text {
+					font-size: 9pt;
+				}
+			}
+		</style>
+	</head>
+	
+	<body id="body">
+		<div>
+			<div id="header" class="container-fluid">
+				<h1>sola superstes;</h1>
+			</div>
+			<div>
+				<div>
+				<div id="navidiv">
+					<nav class="navbar navbar-expand-sm bg-secondary navbar-dark" id="navi">
+						<a class="navbar-brand" id="brandtitle">NAVIGATIONS</a>
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">HOME</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="content.html">MY ESSAY</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link disabled">ABOUT</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="references.html">REFERENCES</a>
+							</li>
+				</div>
+				<div id="introtitle" class="container">
+					<h2>About the Author</h2>
+				</div>
+				<div class="card" class="container">
+					<img class="card-img-top" src="images/abouttheauthor.jpg" alt="Card image">
+					<div class="card-body">
+						<h2 class="card-title">ROSS BINUYA</h4>
+						<p class="card-text">
+							A Grade 9 student from Philippine Science High School - Central Luzon Campus. Loves video games,
+							anime, manga, and light novels. 
+						</p>
+						<p class="card-text">
+							Loves Fantasy, Action, and Sci-Fi genre, interested in Adventure and Psychological. Romance genre is yes. 
+							Unfortunately, Slife of Life genre is boring.
+						</p>
+						<p class="card-text">
+							Loves to play Multiplayer games with friends instead of playing alone.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
